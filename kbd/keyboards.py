@@ -86,7 +86,7 @@ def ct():
     return InlineKeyboardMarkup(inline_keyboard=menu_list)
 
 
-def genmarkup(data):  # передаём в функцию data
+def genmarkup(data):  
     k = InlineKeyboardBuilder()
     for i in data:  # цикл для создания кнопок
         k.row(InlineKeyboardButton(text=f'{i[1]}', callback_data=f'{i[0]}'))
@@ -95,7 +95,7 @@ def genmarkup(data):  # передаём в функцию data
     return k
 
 
-def dob():  # передаём в функцию data
+def dob():  
     k = InlineKeyboardBuilder()
 
     k.row(InlineKeyboardButton(text='Добавить в корзину', callback_data='dob'))

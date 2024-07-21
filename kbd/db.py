@@ -10,12 +10,12 @@ async def db_start():
                 "tg_id INTEGER, "
                 "cart_id TEXT )")
     cur.execute("CREATE TABLE IF NOT EXISTS items("
-                "i_id INTEGER PRIMARY KEY AUTOINCREMENT, "  # "i_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                "i_id INTEGER PRIMARY KEY AUTOINCREMENT, "  
                 "desc TEXT, "
                 "price TEXT, "
                 "photo TEXT)")
     cur.execute("CREATE TABLE IF NOT EXISTS category("
-                "c_id INTEGER PRIMARY KEY AUTOINCREMENT, "  # "i_id INTEGER PRIMARY KEY AUTOINCREMENT, "
+                "c_id INTEGER PRIMARY KEY AUTOINCREMENT, "  
                 "name TEXT)")
     cur.execute("CREATE TABLE IF NOT EXISTS korzina ("
                 "user_id VARCHAR(99999) NULL,"
